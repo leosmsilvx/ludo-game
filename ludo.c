@@ -30,7 +30,6 @@ typedef struct casa {
 } Casa;
 
 int rodarDado();
-bool podeComer(int numCasa, int numJogadorCome, int numJogador);
 
 int main(){
     srand(time(NULL));
@@ -230,7 +229,7 @@ int main(){
 
                                 //Logica ganhar
                                 if(pecas[i*4+j].contagem > 51){
-                                    pecas[i*4+j].contagemFinal = 5 - (pecas[i*4+j].contagem - 51);
+                                    pecas[i*4+j].contagemFinal = 6 - (pecas[i*4+j].contagem - 51);
                                 }
 
                             } else {
